@@ -1,0 +1,24 @@
+s1=input()
+s2=input()
+list_sumb1=[]
+list_sumb2=[]
+for s in s1:
+    list_sumb1.append(s)
+for s in s2:
+    list_sumb2.append(s)
+set_l1=set(list_sumb1)
+l1=list(set_l1)
+set_l2=set(list_sumb2)
+l2=list(set_l2)
+res_l=[]
+for sumbol in l1:
+    for sumbol2 in l2:
+        if sumbol==sumbol2:
+            l1.remove(sumbol)
+        else:
+            res_l.append(sumbol)
+            continue
+result_string=''
+for i in res_l:
+    result_string+=i
+print(result_string)
