@@ -9,7 +9,6 @@ for co,ca,po in zip (countries,capitals,popul_list):
     print(f'{ca} is the capital of {co} , population equal {po} people')
 """
 def ignore_command(command):
-    ignore=['alias','configuration','ip','sql','select','updata','exec','del','truncate']
-    for word in ignore:
-        print(True if word in command  else False)
+    for word in ['alias','configuration','ip','sql','select','updata','exec','del','truncate']:
+        return True if word in command else False
 
